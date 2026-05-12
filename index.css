@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bento-bg: #F5F2ED;
+  --color-bento-text: #2D2D2D;
+  --color-bento-green: #4B5E40;
+  --color-bento-gold: #BF8B4D;
+  --color-bento-light-green: #A8E6CF;
+  --color-bento-dark: #2D2D2D;
+  --color-bento-card-green: #E6EBE0;
+  --color-bento-card-tan: #FDF9F3;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-serif: "Playfair Display", Georgia, serif;
+}
+
+@layer base {
+  body {
+    @apply bg-bento-bg text-bento-text font-sans antialiased overflow-x-hidden selection:bg-bento-gold selection:text-white;
+  }
+}
